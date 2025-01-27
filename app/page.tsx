@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <main className="container mx-auto px-4">
       <section className="py-20 text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to تونس Esports</h1>
+        <h1 className="text-4xl font-bold mb-4">Welcome to EsportsTN</h1>
         <p className="text-xl mb-8">Connect, compete, and conquer with Tunisian gamers!</p>
         <Link href="/tournaments" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
           Explore Tournaments
