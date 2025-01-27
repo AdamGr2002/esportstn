@@ -59,8 +59,7 @@ const games = [
   "All",
   "League of Legends",
   "Counter-Strike: Global Offensive",
-  "Dota 2",
-  "Rocket League",
+  "FIFA",
   "Fortnite",
   "Valorant",
 ]
