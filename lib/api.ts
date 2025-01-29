@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 export interface NewsItem {
     id: number
     title: string
@@ -87,6 +88,25 @@ export interface NewsItem {
   export function getCategories(): string[] {
     const categories = new Set(newsData.map((news) => news.category))
     return Array.from(categories)
+  }
+  
+  export async function getTeamById(id: string) {
+    // Replace with your actual API call or database query
+    return {
+      name: "Team Name",
+      logo: "/team-placeholder.svg",
+      founded: "2020",
+      location: "Tunisia",
+      description: "Team description...",
+      players: [],
+      achievements: [],
+      stats: {
+        totalWins: 0,
+        totalPrize: 0,
+        currentRank: 1,
+        winRate: 0
+      }
+    }
   }
   
   

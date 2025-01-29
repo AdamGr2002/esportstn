@@ -21,7 +21,7 @@ export interface PostComment {
 
 interface CommentSectionProps {
   postId: string
-  postType: "news" | "tournament"
+  postType: "news" | "tournament" | "team"
 }
 
 export default function CommentSection({ postId, postType }: CommentSectionProps) {

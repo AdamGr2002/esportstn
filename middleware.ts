@@ -7,7 +7,9 @@ const isPublicRoute = createRouteMatcher([
     "/news",
     "/news/(.*)",
     "/teams",
-    "/tournaments"
+    "/tournaments",
+    "/forums",
+    "/forums/(.*)"  
 ])
 
 export default clerkMiddleware(async (auth, request) => {

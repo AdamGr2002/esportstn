@@ -7,6 +7,7 @@ export function AnimatedTabsHover() {
     { name: 'Tournaments', path: '/tournaments' },
     { name: 'News', path: '/news' },
     { name: 'Teams', path: '/teams' },
+    { name: 'Forums', path: '/forums' },
   ];
 
   return (
