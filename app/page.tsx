@@ -37,6 +37,7 @@ const news = [
 
 export default function Home() {
   return (
+    
     <main className="container mx-auto px-4">
       <section className="py-20 text-center">
         <h1 className="text-4xl font-bold mb-4">Welcome to EsportsTN</h1>

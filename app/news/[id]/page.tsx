@@ -2,11 +2,12 @@ import Image from "next/image"
 import { getNewsById } from "@/lib/api"
 import { notFound } from "next/navigation"
 import SocialShare from "../../components/SocialShare"
+import CommentSection from "@/app/components/CommentSection"
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const news = await getNewsById(Number.parseInt(params.id))
   if (!news) return { title: "News Article Not Found" }
-  return { title: `${news.title} | تونس Esports` }
+  return { title: `${news.title} | EsportsTN` }
 }
 
 export default async function NewsArticle({ params }: { params: { id: string } }) {
@@ -39,6 +40,10 @@ export default async function NewsArticle({ params }: { params: { id: string } }
           </p>
         ))}
       </div>
+      <CommentSection 
+        postId={params.id} 
+        postType="news" 
+      />
     </article>
   )
 }
